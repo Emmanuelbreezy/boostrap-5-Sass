@@ -1,0 +1,8 @@
+@use '../custom' as *;
+
+.faq{
+    
+    p{
+        color: var(--paragraph-color);
+    }
+}

@@ -1,0 +1,10 @@
+@use './custom' as *;
+
+body{
+    background-color: var(--bg);
+}
+
+._bg__shape_sy{
+    fill: var(--bg) !important;
+    background: transparent!important;
+}

@@ -11119,6 +11119,29 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+:root {
+  --bg: #fff;
+  --panel:#e9ecef;
+  --headline:#212529;
+  --paragraph-color:#dee2e6;
+}
+
+:root[data-theme=dark] {
+  --bg: #212529;
+  --panel: rgba(28, 29, 29, 0.589);
+  --headline:#fff;
+  --paragraph-color:#eee;
+}
+
+body {
+  background-color: var(--bg);
+}
+
+._bg__shape_sy {
+  fill: var(--bg) !important;
+  background: transparent !important;
+}
+
 @keyframes pulse-border {
   0% {
     transform: scale(1);
@@ -11212,6 +11235,7 @@ textarea.form-control-lg {
 
 .display-3 {
   font-family: "Poppins", sans-serif;
+  color: var(--headline);
 }
 .display-3--title {
   font-size: 1.2em;
@@ -11289,6 +11313,9 @@ textarea.form-control-lg {
 .companies {
   padding: 0 0 5rem 0;
 }
+.companies h4 {
+  color: var(--headline);
+}
 .companies__logo-box {
   max-width: 100%;
   height: 3rem;
@@ -11307,6 +11334,12 @@ textarea.form-control-lg {
 .services {
   position: relative;
   padding: 1rem 0;
+}
+.services p {
+  color: var(--paragraph-color);
+}
+.services ._bg_panel {
+  background-color: var(--panel);
 }
 .services__content {
   padding: 1rem;
@@ -11385,8 +11418,15 @@ textarea.form-control-lg {
   text-transform: capitalize;
 }
 
+.faq p {
+  color: var(--paragraph-color);
+}
+
 .portfolio {
   padding: 4rem 0;
+}
+.portfolio p {
+  color: var(--paragraph-color);
 }
 .portfolio button {
   text-transform: capitalize;
@@ -11449,7 +11489,10 @@ textarea.form-control-lg {
 
 .get-started {
   padding: 4rem 0;
-  background-color: #e9ecef;
+  background-color: var(--panel);
+}
+.get-started p {
+  color: var(--paragraph-color);
 }
 
 .cta-info {

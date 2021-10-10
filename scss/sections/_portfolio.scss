@@ -4,6 +4,10 @@
 
 .portfolio{
     padding: 4rem 0;
+
+    p{
+        color: var(--paragraph-color);
+    }
     
     button{
         text-transform: capitalize;

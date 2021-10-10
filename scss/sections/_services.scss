@@ -4,6 +4,14 @@
     position: relative;
     padding: 1rem 0;
 
+    p{
+        color: var(--paragraph-color);
+    }
+
+    ._bg_panel{
+        background-color: var(--panel);
+    }
+
     &__content{
         padding: 1rem;
         margin-top: 0rem;

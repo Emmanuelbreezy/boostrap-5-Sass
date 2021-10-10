@@ -1,5 +1,8 @@
 @use 'custom';
 
+//THEMES
+@use 'theme.scss';
+
 //IMPORT THE COMPONENT
 @use 'components/animation';
 @use 'components/button';
